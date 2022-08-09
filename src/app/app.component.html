@@ -1,0 +1,15 @@
+<div style="padding: 120px">
+  <div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" id="myInput" [formControl]="todoItem" placeholder="Title...">
+    <span (click)="addTodoList()" class="addBtn">Add</span>
+  </div>
+
+  <ul id="myUL" *ngFor="let item of todoList" class="row" >
+    <li style="width: 20">{{item}} <span style="  position: absolute;right: 3px;color: red;"
+        (click)="deleteElementTodoList(item)">X</span></li>
+
+  </ul>
+</div>
+
+<router-outlet></router-outlet>
