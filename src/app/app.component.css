@@ -108,7 +108,12 @@
     transition: 0.3s;
     border-radius: 0;
   }
-  
+  .deleteIcon{
+    position: absolute;
+    right: 3px;
+    color: red;
+  }
   .addBtn:hover {
     background-color: #bbb;
   }
+ 
