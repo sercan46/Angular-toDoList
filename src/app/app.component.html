@@ -6,9 +6,8 @@
   </div>
 
   <ul id="myUL" *ngFor="let item of todoList" class="row" >
-    <li style="width: 20">{{item}} <span style="  position: absolute;right: 3px;color: red;"
+    <li style="width: 20">{{item}} <span class="deleteIcon"
         (click)="deleteElementTodoList(item)">X</span></li>
-
   </ul>
 </div>
 
